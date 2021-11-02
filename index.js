@@ -57,7 +57,10 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let string = '1999';
+Number(string);{
+  console.log('Task 1c', string);
+}
 
 
 
@@ -119,7 +122,7 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age, weight){
+function hungryDog(weight, age){
   if(age >= 1 && weight <= 5){
     return weight * 0.05;
   } else if (age >= 1 && weight >=6 && weight <= 10){
@@ -132,12 +135,11 @@ function hungryDog(age, weight){
     return weight * 0.04;
   } else if (age < 0.583 && age >= 0.333){
     return weight * 0.05;
-  } else if (age < 0.333 && age >=0.166){
+  } else if (age < 0.333){
     return weight * 0.1;
   }
 }
-
-console.log('Task 3', hungryDog(1, 15));
+console.log('Task 3', hungryDog(15, 1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
