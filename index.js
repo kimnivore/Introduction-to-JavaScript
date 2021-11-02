@@ -221,9 +221,21 @@ Using the annoyingSong function below do the following:
 2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
-}
+
+// let bottles = 5;
+// function annoyingSong(bottles){  
+//     for(let i = 5; i >= 0; i--) {
+      
+// console.log("{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall");
+
+function annoyingSong(bottles){  
+    for(let i = bottles; i > 0; i--) {
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1}bottles of soda on the wall';
+      }
+    }
+    console.log('Task 6', annoyingSong(5));
+
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 //Grade Calculator
 /*
