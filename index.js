@@ -163,14 +163,34 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-  /*add your code here*/
-}
+let computer = (Math.floor(Math.random() * 3));
+  if (computer === 0) {
+    computer = "rock";
+  } else if (computer === 1) {
+    computer = "paper";
+  } else if (computer === 2) {
+    computer = "scissors";
+  }
+function game(user, computer){  
+  if(user === "rock" && computer === "scissors"){
+    return "you win!";
+  }else if(user === "paper" && computer === "rock") {
+    return "you win!";
+  }else if(user === "rock" && computer === "scissors") {
+    return "you win!";
+  }else if(user === "paper" && computer === "rock") {
+    return "you win!";
+  } else if (user === computer) {
+    return "it's a tie";
+  } else {
+    return "you lose!";
+  }
+console.log(game("rock", computer));
+
 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
 //Metric Converter 
 //Task 5a - KM to Miles 
 /*
@@ -179,13 +199,9 @@ Using the miles function below do the following:
 2. Convert the number of kiolmeters received to miles
 3. Return the number of miles
 */
-
 function miles(/*add your code here*/){
   /*add your code here*/
 }
-
-
-
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
@@ -193,15 +209,10 @@ Using the feet function below do the following:
 2. Convert the number of cm to feet
 3. Return number of feet
 */
-
 function feet(/*add your code here*/){
   /*add your code here*/
 }
-
-
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
 // Let's Sing 99 Bottles of Soda on the Wall!
 /*
 Using the annoyingSong function below do the following:
@@ -209,52 +220,36 @@ Using the annoyingSong function below do the following:
 2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-
 function annoyingSong(/*add your code here*/){
       /*add your code here*/
 }
-
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
 //Grade Calculator
 /*
 Using the grade function below do the following: 
 1. Receive a score out of 100 
 2. Return the corresponding letter grade following this grade scale:
-
  90-100 should return 'you got an A' 
  80-89 should return 'you got a B'
  70-79 should return 'you got a C'
  60-69 should return 'you got a D'
  below should return 'you got an F'
 */
-
 function grade(/*Your Code here */){
 /*Your Code here */
 }
-
-
-
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
-
 //Vowel Counter - How many vowels are there?
 /*
 Using the vowelCounter function below do the following:
 1. Receive a string as a parameter
 2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
-
-
 function vowelCounter(/*add your code here*/) {
   /*add your code here*/
 }
-
-
-
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
   console.log('its working');
