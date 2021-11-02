@@ -176,17 +176,15 @@ function game(user, computer){
     return "you win!";
   }else if(user === "paper" && computer === "rock") {
     return "you win!";
-  }else if(user === "rock" && computer === "scissors") {
-    return "you win!";
-  }else if(user === "paper" && computer === "rock") {
+  }else if(user === "scissors" && computer === "paper") {
     return "you win!";
   } else if (user === computer) {
     return "it's a tie";
   } else {
     return "you lose!";
   }
-console.log(game("rock", computer));
-
+}
+console.log('Task 4', game("rock", computer));
 
 
 
