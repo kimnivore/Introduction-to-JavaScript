@@ -19,9 +19,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+let votingAge = 21;
+if (votingAge >= 18) {
+console.log("True");
+} else {
+  console.log("False");
+}
 /*
 Task 1b - Values
 
@@ -33,7 +36,10 @@ Do the following:
    HINT: no function required
 */
 
-
+let firstNum = 1;
+let secondNum = 2;
+// if (secondNum = 2) 
+console.log(firstNum + secondNum);
 
 
 
@@ -122,12 +128,13 @@ function hungryDog(age, weight){
     return weight * 0.04;
   } else if (age < 0.583 && age >= 0.333){
     return weight * 0.05;
-  } else if (age < 0.333){
+  } else if (age < 0.333 && age >=0.166){
     return weight * 0.1;
   }
 }
 
-console.log('task 3', hungryDog(15, 1));
+console.log('task 3', hungryDog(1, 15));
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
