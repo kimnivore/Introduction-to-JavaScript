@@ -21,9 +21,9 @@ Do the following:
 */
 let votingAge = 21;
 if (votingAge >= 18) {
-console.log("True");
+console.log('Task 1a', 'True');
 } else {
-  console.log("False");
+  console.log('False');
 }
 /*
 Task 1b - Values
@@ -38,8 +38,12 @@ Do the following:
 
 let firstNum = 1;
 let secondNum = 2;
-// if (secondNum = 2) 
-console.log(firstNum + secondNum);
+if (secondNum === 2){
+  firstNum = firstNum + secondNum;
+} else {
+  firstNum = firstNum;
+}
+console.log('Task 1b', firstNum);
 
 
 
@@ -133,7 +137,7 @@ function hungryDog(age, weight){
   }
 }
 
-console.log('task 3', hungryDog(1, 15));
+console.log('Task 3', hungryDog(1, 15));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
